@@ -1,0 +1,100 @@
+.symptoms-page {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.symptoms-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.symptoms-top-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 640px) {
+  .symptoms-top-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.symptoms-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .symptoms-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.symptom-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 16px 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.field-input {
+  width: 100%;
+  padding: 10px 10px 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.segmented {
+  display: inline-flex;
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.segmented-option {
+  border: 0;
+  background: transparent;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+}
+
+.segmented-option.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.submit-btn {
+  appearance: none;
+  border: 0;
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+

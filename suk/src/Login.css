@@ -1,0 +1,62 @@
+.login-box {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid green;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  background: #f9f9f9;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+/* Links section */
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: blue;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
