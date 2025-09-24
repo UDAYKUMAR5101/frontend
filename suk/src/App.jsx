@@ -4,6 +4,8 @@ import Login from "./Login";
 import Symptoms from "./Symptoms";
 import History from "./History";
 import Dashboard from "./Dashboard";
+import PatientSignin from "./PatientSignin";
+import DiabetesPredictor from "./DiabetesPredictor";
 import "./App.css";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Route path="/symptoms" element={<Symptoms />} />
         <Route path="/history" element={<History />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/patient-signin" element={<PatientSignin />} />
+        <Route path="/diabetes" element={<DiabetesPredictor />} />
       </Routes>
     </Router>
   );

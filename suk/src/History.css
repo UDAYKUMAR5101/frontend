@@ -21,8 +21,12 @@
 .history-title {
   text-align: center;
   margin: 0;
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: 0.3px;
+  background: linear-gradient(90deg, #2e7d32, #1b5e20);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .history-header {
@@ -126,6 +130,18 @@
   padding: 24px 20px;
 }
 
+.advice-box {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+.advice-box.warn { background: #fff8e1; color: #7a4f01; }
+.advice-box.ok { background: #e8f5e9; color: #2e7d32; }
+.advice-title { margin: 0 0 8px 0; font-size: 18px; }
+.advice-message { margin: 0 0 8px 0; }
+.advice-tips { margin: 0; padding-left: 18px; }
+
 .result-box.positive {
   background: var(--positive-bg);
   color: var(--positive-text);
@@ -144,6 +160,21 @@
 .result-message {
   margin: 0;
   line-height: 1.5;
+}
+
+/* subtle separators */
+.history-left, .history-right { position: relative; }
+.history-left::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: rgba(0,0,0,0.06);
+}
+@media (max-width: 767px) {
+  .history-left::after { display: none; }
 }
 
 @keyframes pop-in {

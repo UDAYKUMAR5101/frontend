@@ -1,11 +1,12 @@
 import React from "react";
 
 function ResultBox({ result = "Negative" }) {
-  const isPositive = String(result).toLowerCase() === "positive";
+  const normalized = String(result).toLowerCase();
+  const isPositive = normalized === "positive";
   const title = isPositive ? "Positive" : "Negative";
   const message = isPositive
-    ? "High risk detected – Please consult a doctor."
-    : "Low risk – No immediate consultation required.";
+    ? "High risk detected."
+    : "No need to consult doctor.";
 
   return (
     <div className={`result-box ${isPositive ? "positive" : "negative"}`}>

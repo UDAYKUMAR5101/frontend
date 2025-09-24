@@ -1,6 +1,6 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is a React SPA built with Vite and React Router. See `INSTALL.md` for one-line setup on a new device.
 
 Currently, two official plugins are available:
 

@@ -50,7 +50,7 @@ function Login() {
         setShowToast(true);
         setTimeout(() => {
           setShowToast(false);
-          navigate("/dashboard");
+          navigate("/diabetes");
         }, 900);
       })
       .catch((err) => {
@@ -137,6 +137,27 @@ function Login() {
           {loading ? "Submitting..." : "Login"}
         </button>
       </form>
+
+      <div style={{
+        textAlign: "right",
+        marginTop: "16px",
+        fontSize: "14px"
+      }}>
+        <button 
+          type="button"
+          onClick={() => navigate("/patient-signin")}
+          style={{
+            background: "none",
+            border: "none",
+            color: "#2e7d32",
+            textDecoration: "underline",
+            cursor: "pointer",
+            fontSize: "14px"
+          }}
+        >
+          Patient Login
+        </button>
+      </div>
     </div>
   );
 }
